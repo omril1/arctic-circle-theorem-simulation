@@ -9,11 +9,11 @@ interface Props {
 export default function Extents({ generation }: Props) {
   const unitTimesGen = generation * UNIT;
   const startingPosition = `M ${unitTimesGen},0`;
-  const quad1 = `h ${UNIT} v ${UNIT}`.repeat(generation);
-  const quad2 = `v ${UNIT} h ${-UNIT}`.repeat(generation);
-  const quad3 = `h ${-UNIT} v ${-UNIT}`.repeat(generation);
-  const quad4 = `v ${-UNIT} h ${UNIT}`.repeat(generation);
-  const d = `${startingPosition} ${quad1} ${quad2} ${quad3} ${quad4}`;
+  const quad1 = `h  ${UNIT} v  ${UNIT}`.repeat(generation);
+  const quad2 = `v  ${UNIT} h -${UNIT}`.repeat(generation);
+  const quad3 = `h -${UNIT} v -${UNIT}`.repeat(generation);
+  const quad4 = `v -${UNIT} h  ${UNIT}`.repeat(generation);
+  const d = `${startingPosition}\n${quad1}\n${quad2}\n${quad3}\n${quad4}`;
 
   return (
     <svg className={style.Extents} width={unitTimesGen * 2} height={unitTimesGen * 2}>
