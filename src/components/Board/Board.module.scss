@@ -1,0 +1,13 @@
+.grid {
+  position: relative;
+  background-color: #95f8f8;
+  background-size: 30px 30px;
+  // prettier-ignore
+  background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

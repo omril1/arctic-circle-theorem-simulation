@@ -1,0 +1,22 @@
+$base: 30px;
+
+.block {
+  position: absolute;
+  border: 1px solid black;
+  background-color: #828567;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top,
+.down {
+  width: $base * 2 - 2px;
+  height: $base - 2px;
+}
+.left,
+.right {
+  width: $base - 2px;
+  height: $base * 2 - 2px;
+}

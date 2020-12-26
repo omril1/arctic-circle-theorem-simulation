@@ -1,0 +1,10 @@
+.Extents {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  > path {
+    fill: #ffd800;
+    stroke: red;
+  }
+}
